@@ -1,0 +1,899 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes, maximum-scale=5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>New Year 2026 Special Wishes for Shibani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Playfair+Display:wght@700;800;900&family=Lora:wght@400;500;600&family=Dancing+Script:wght@400;700&family=Great+Vibes:wght@400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      height: auto;
+      width: 100%;
+      overflow-x: hidden;
+      background: linear-gradient(135deg, #1a0033 0%, #2d0052 30%, #4a0080 60%, #2d0052 100%);
+      color: #fff;
+      font-family: 'Lora', serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+    }
+
+    /* ========== ANIMATED ROMANTIC BACKGROUND ========== */
+    .bg-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .bg-glow {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(255, 20, 147, 0.2) 0%, transparent 70%);
+      filter: blur(100px);
+      animation: glowPulse 8s ease-in-out infinite;
+    }
+
+    .glow-1 { top: 5%; left: 5%; animation: glowPulse 10s ease-in-out infinite; }
+    .glow-2 { bottom: 10%; right: 5%; animation: glowPulse 9s ease-in-out infinite 1s; }
+    .glow-3 { top: 60%; left: 60%; animation: glowPulse 11s ease-in-out infinite 2s; }
+
+    @keyframes glowPulse {
+      0%, 100% { transform: scale(1); opacity: 0.4; }
+      50% { transform: scale(1.3); opacity: 0.7; }
+    }
+
+    /* Floating elements background */
+    .floating-element {
+      position: absolute;
+      font-size: 50px;
+      opacity: 0.08;
+      animation: floatDrift 12s ease-in-out infinite;
+    }
+
+    .float-1 { top: 15%; left: 8%; animation-delay: 0s; }
+    .float-2 { top: 70%; right: 10%; animation-delay: 2s; }
+    .float-3 { top: 45%; left: 85%; animation-delay: 4s; }
+
+    @keyframes floatDrift {
+      0%, 100% { transform: translateY(0) translateX(0) rotate(0deg); }
+      50% { transform: translateY(-40px) translateX(25px) rotate(20deg); }
+    }
+
+    /* ========== MAIN CONTAINER ========== */
+    .main-container {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      padding: 25px;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    /* ========== LOVE CARD STYLES ========== */
+    .card-container {
+      width: 100%;
+      max-width: 700px;
+      perspective: 1200px;
+      animation: cardEnter 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    @keyframes cardEnter {
+      0% {
+        opacity: 0;
+        transform: translateY(50px) scale(0.85) rotateX(25deg);
+        filter: blur(25px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1) rotateX(0);
+        filter: blur(0);
+      }
+    }
+
+    /* ========== CARD STRUCTURE ========== */
+    .love-card {
+      background: linear-gradient(135deg, rgba(200, 50, 150, 0.15), rgba(255, 20, 147, 0.1), rgba(200, 100, 180, 0.12));
+      backdrop-filter: blur(40px);
+      border: 2px solid rgba(255, 105, 180, 0.4);
+      border-radius: 40px;
+      padding: 60px 45px;
+      position: relative;
+      overflow: visible;
+      box-shadow: 
+        0 30px 100px rgba(255, 20, 147, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.25),
+        0 0 80px rgba(255, 182, 193, 0.2);
+      min-height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transform: translateZ(0);
+      backface-visibility: hidden;
+      width: 100%;
+    }
+
+    /* Card glow effect */
+    .love-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, 
+        transparent 30%, 
+        rgba(255, 255, 255, 0.15) 50%, 
+        transparent 70%);
+      animation: shimmer 5s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes shimmer {
+      0% { transform: translate(-100%, -100%) rotate(45deg); }
+      100% { transform: translate(100%, 100%) rotate(45deg); }
+    }
+
+    .love-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(255, 182, 193, 0.6), transparent);
+    }
+
+    /* ========== HEADER SECTION ========== */
+    .card-header {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .heart-icon {
+      font-size: 70px;
+      margin-bottom: 25px;
+      animation: heartBeat 1.3s ease-in-out infinite;
+      display: inline-block;
+      filter: drop-shadow(0 0 15px rgba(255, 20, 147, 0.5));
+    }
+
+    @keyframes heartBeat {
+      0%, 100% { transform: scale(1); }
+      25% { transform: scale(1.2); }
+      50% { transform: scale(1); }
+    }
+
+    .card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: #ff1493;
+      background: linear-gradient(135deg, #ff1493, #ff69b4, #ff1493);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 12px;
+      letter-spacing: 3px;
+      animation: titleGlow 3.5s ease-in-out infinite;
+      filter: drop-shadow(0 0 12px rgba(255, 20, 147, 0.3));
+    }
+
+    @keyframes titleGlow {
+      0%, 100% { filter: drop-shadow(0 0 12px rgba(255, 20, 147, 0.3)); }
+      50% { filter: drop-shadow(0 0 25px rgba(255, 20, 147, 0.6)); }
+    }
+
+    .card-subtitle {
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.8rem;
+      color: rgba(255, 182, 193, 0.95);
+      font-weight: 400;
+      letter-spacing: 2px;
+      animation: slideInUp 0.9s ease 0.2s both;
+    }
+
+    .card-tagline {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.2rem;
+      color: rgba(255, 182, 193, 0.85);
+      margin-top: 12px;
+      animation: slideInUp 0.9s ease 0.3s both;
+    }
+
+    /* ========== CONTENT SECTION ========== */
+    .card-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .recipient-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: rgba(255, 105, 180, 0.98);
+      margin-bottom: 30px;
+      font-style: italic;
+      text-shadow: 0 0 20px rgba(255, 20, 147, 0.25);
+      animation: slideInUp 0.9s ease 0.4s both;
+    }
+
+    .main-message {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      line-height: 2.1;
+      color: rgba(255, 255, 255, 0.97);
+      margin-bottom: 28px;
+      font-weight: 400;
+      animation: slideInUp 0.9s ease 0.5s both;
+      position: relative;
+      padding-left: 35px;
+    }
+
+    .main-message::before {
+      content: '"';
+      position: absolute;
+      left: 0;
+      font-size: 4.5rem;
+      color: rgba(255, 20, 147, 0.25);
+      font-family: 'Playfair Display', serif;
+    }
+
+    .divider {
+      width: 140px;
+      height: 2.5px;
+      background: linear-gradient(90deg, transparent, rgba(255, 182, 193, 0.6), transparent);
+      margin: 30px auto;
+      animation: expandLine 1s ease 0.6s both;
+    }
+
+    @keyframes expandLine {
+      0% { width: 0; opacity: 0; }
+      100% { width: 140px; opacity: 1; }
+    }
+
+    /* ========== SPECIAL SHAYRI SECTION ========== */
+    .shayri-container {
+      background: linear-gradient(135deg, rgba(255, 20, 147, 0.12), rgba(255, 182, 193, 0.08));
+      border-left: 5px solid rgba(255, 20, 147, 0.5);
+      border-radius: 15px;
+      padding: 30px;
+      margin: 32px 0;
+      animation: slideInUp 0.9s ease 0.7s both;
+      position: relative;
+    }
+
+    .shayri-container::before {
+      content: '';
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      right: -1px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 182, 193, 0.4), transparent);
+    }
+
+    .shayri-label {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.2rem;
+      color: rgba(255, 182, 193, 0.85);
+      margin-bottom: 18px;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+
+    .shayri-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      color: rgba(255, 240, 245, 0.98);
+      text-align: center;
+      line-height: 2.3;
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    .shayri-translation {
+      font-family: 'Lora', serif;
+      font-size: 1.05rem;
+      color: rgba(255, 182, 193, 0.8);
+      margin-top: 22px;
+      text-align: center;
+      line-height: 1.95;
+      font-style: italic;
+      border-top: 1px solid rgba(255, 182, 193, 0.25);
+      padding-top: 18px;
+    }
+
+    /* ========== SIGNATURE SECTION ========== */
+    .signature-section {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      margin-top: 32px;
+      padding-top: 22px;
+      border-top: 1.5px solid rgba(255, 182, 193, 0.25);
+      animation: slideInUp 0.9s ease 0.8s both;
+    }
+
+    .signature-text {
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.6rem;
+      color: rgba(255, 182, 193, 0.9);
+      font-weight: 400;
+      margin-bottom: 12px;
+    }
+
+    .lover-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: rgba(255, 105, 180, 0.95);
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-shadow: 0 0 15px rgba(255, 20, 147, 0.2);
+    }
+
+    .year-badge {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.15rem;
+      color: rgba(255, 182, 193, 0.75);
+      margin-top: 10px;
+      letter-spacing: 1px;
+    }
+
+    /* ========== INTERACTIVE ELEMENTS ========== */
+    .action-buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 38px;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 2;
+      animation: slideInUp 0.9s ease 0.9s both;
+    }
+
+    .btn {
+      padding: 14px 32px;
+      border: 2.5px solid rgba(255, 182, 193, 0.5);
+      background: linear-gradient(135deg, rgba(255, 20, 147, 0.15), rgba(255, 192, 203, 0.12));
+      color: rgba(255, 182, 193, 0.95);
+      border-radius: 30px;
+      cursor: pointer;
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+      position: relative;
+      overflow: hidden;
+      letter-spacing: 1.5px;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+      transition: left 0.7s ease;
+    }
+
+    .btn:hover {
+      border-color: rgba(255, 20, 147, 0.9);
+      background: linear-gradient(135deg, rgba(255, 20, 147, 0.25), rgba(255, 192, 203, 0.2));
+      box-shadow: 0 0 35px rgba(255, 20, 147, 0.35), inset 0 0 25px rgba(255, 20, 147, 0.15);
+      transform: translateY(-4px);
+      color: rgba(255, 182, 193, 1);
+    }
+
+    .btn:hover::before {
+      left: 100%;
+    }
+
+    .btn:active {
+      transform: translateY(-1px);
+    }
+
+    /* ========== CANVAS EFFECTS ========== */
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    /* ========== ANIMATIONS ========== */
+    @keyframes slideInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(35px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 900px) {
+      .love-card {
+        padding: 50px 38px;
+      }
+      .card-title {
+        font-size: 3rem;
+      }
+      .heart-icon {
+        font-size: 60px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .main-container {
+        padding: 16px;
+      }
+      .love-card {
+        padding: 40px 28px;
+        border-radius: 32px;
+      }
+      .card-header {
+        margin-bottom: 35px;
+      }
+      .card-title {
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+      }
+      .card-subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+      }
+      .card-tagline {
+        font-size: 1rem;
+      }
+      .heart-icon {
+        font-size: 55px;
+        margin-bottom: 18px;
+      }
+      .recipient-name {
+        font-size: 2rem;
+        margin-bottom: 24px;
+      }
+      .main-message {
+        font-size: 1.15rem;
+        line-height: 2;
+        margin-bottom: 22px;
+        padding-left: 28px;
+      }
+      .main-message::before {
+        font-size: 3.5rem;
+      }
+      .shayri-container {
+        padding: 24px;
+        margin: 24px 0;
+      }
+      .shayri-text {
+        font-size: 1.2rem;
+        line-height: 2.1;
+      }
+      .shayri-translation {
+        font-size: 0.98rem;
+        margin-top: 18px;
+        padding-top: 16px;
+      }
+      .divider {
+        width: 120px;
+        margin: 24px auto;
+      }
+      .signature-section {
+        margin-top: 26px;
+        padding-top: 18px;
+      }
+      .signature-text {
+        font-size: 1.4rem;
+      }
+      .lover-name {
+        font-size: 1.25rem;
+      }
+      .action-buttons {
+        gap: 12px;
+        margin-top: 30px;
+      }
+      .btn {
+        padding: 12px 26px;
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .main-container {
+        padding: 12px;
+      }
+      .love-card {
+        padding: 32px 20px;
+        border-radius: 26px;
+        max-width: 95vw;
+      }
+      .card-header {
+        margin-bottom: 28px;
+      }
+      .card-title {
+        font-size: 1.9rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 8px;
+      }
+      .card-subtitle {
+        font-size: 1.3rem;
+        margin-bottom: 6px;
+      }
+      .card-tagline {
+        font-size: 0.95rem;
+      }
+      .heart-icon {
+        font-size: 50px;
+        margin-bottom: 14px;
+      }
+      .recipient-name {
+        font-size: 1.7rem;
+        margin-bottom: 18px;
+      }
+      .main-message {
+        font-size: 1.08rem;
+        line-height: 1.9;
+        margin-bottom: 18px;
+        padding-left: 24px;
+      }
+      .main-message::before {
+        font-size: 3rem;
+        left: -6px;
+      }
+      .shayri-container {
+        padding: 18px;
+        margin: 18px 0;
+        border-left-width: 4px;
+      }
+      .shayri-label {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+      }
+      .shayri-text {
+        font-size: 1.1rem;
+        line-height: 2;
+      }
+      .shayri-translation {
+        font-size: 0.93rem;
+        line-height: 1.85;
+        margin-top: 14px;
+        padding-top: 14px;
+      }
+      .divider {
+        width: 110px;
+        margin: 18px auto;
+      }
+      .signature-section {
+        margin-top: 22px;
+        padding-top: 16px;
+      }
+      .signature-text {
+        font-size: 1.25rem;
+      }
+      .lover-name {
+        font-size: 1.1rem;
+      }
+      .action-buttons {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 24px;
+      }
+      .btn {
+        width: 100%;
+        padding: 13px 22px;
+        font-size: 0.92rem;
+        border-radius: 24px;
+        min-height: 48px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .love-card {
+        padding: 26px 16px;
+        border-radius: 22px;
+      }
+      .card-title {
+        font-size: 1.65rem;
+      }
+      .card-subtitle {
+        font-size: 1.15rem;
+      }
+      .heart-icon {
+        font-size: 45px;
+      }
+      .recipient-name {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+      }
+      .main-message {
+        font-size: 1.04rem;
+        margin-bottom: 16px;
+        padding-left: 22px;
+      }
+      .main-message::before {
+        font-size: 2.8rem;
+      }
+      .shayri-text {
+        font-size: 1.05rem;
+      }
+      .btn {
+        padding: 11px 20px;
+        font-size: 0.88rem;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .love-card {
+        padding: 22px 14px;
+        border-radius: 18px;
+      }
+      .card-title {
+        font-size: 1.5rem;
+      }
+      .card-subtitle {
+        font-size: 1.05rem;
+      }
+      .heart-icon {
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+      .recipient-name {
+        font-size: 1.35rem;
+        margin-bottom: 14px;
+      }
+      .main-message {
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 14px;
+        padding-left: 20px;
+      }
+      .main-message::before {
+        font-size: 2.4rem;
+      }
+      .shayri-container {
+        padding: 14px;
+        margin: 14px 0;
+      }
+      .shayri-label {
+        font-size: 1rem;
+      }
+      .shayri-text {
+        font-size: 1rem;
+        line-height: 1.9;
+      }
+      .shayri-translation {
+        font-size: 0.88rem;
+        margin-top: 10px;
+        padding-top: 10px;
+      }
+      .btn {
+        padding: 10px 16px;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Effects -->
+  <div class="bg-container">
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+    <div class="bg-glow glow-3"></div>
+    <div class="floating-element float-1">💜</div>
+    <div class="floating-element float-2">💕</div>
+    <div class="floating-element float-3">✨</div>
+  </div>
+
+  <!-- Canvas for effects -->
+  <canvas id="effectsCanvas"></canvas>
+
+  <!-- Main Content -->
+  <div class="main-container">
+    <div class="card-container">
+      <div class="love-card">
+        <!-- Header -->
+        <div class="card-header">
+          <div class="heart-icon">💜</div>
+          <h1 class="card-title">Happy New Year 2026</h1>
+          <div class="card-subtitle">My Dearest Shibani</div>
+          <div class="card-tagline">Special Wishes & Blessings For You</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="card-content">
+          <p class="main-message">
+            As the new year begins, I wish for you all the happiness, success, and love in the world. May 2026 bring you endless joy, beautiful moments, and dreams that come true. You deserve the very best, and I'm honored to be part of your journey this year.
+          </p>
+
+          <div class="divider"></div>
+
+          <p class="main-message" style="padding-left: 0; margin: 20px 0 28px;">
+            This year, I wish to celebrate every milestone with you, support your every dream, and create memories that last forever. May your smile never fade, may your heart always be filled with love, and may 2026 be the most beautiful year of your life. Happy New Year, my love! 🎉
+          </p>
+
+          <!-- Special Shayri -->
+          <div class="shayri-container">
+            <div class="shayri-label">✨ A New Beginning With You ✨</div>
+            <div class="shayri-text">
+              नई सुबह, नई खुशियां लेकर आये ये साल,<br>
+              तेरे साथ हर पल हो जाये कमाल।<br>
+              दिल की दुआ है, तू हमेशा मुस्कुराये,<br>
+              मेरी ज़िंदगी की रोशनी तू बन जाये।
+            </div>
+            <div class="shayri-translation">
+              "This year brings new mornings and new happiness,<br>
+              Every moment with you becomes magical.<br>
+              My heart's prayer is that you always smile,<br>
+              You are the light that illuminates my entire life."
+            </div>
+          </div>
+
+          <!-- Signature -->
+          <div class="signature-section">
+            <div class="signature-text">All My Love & Wishes ❤️</div>
+            <div class="lover-name">~ Kunal</div>
+            <div class="year-badge">Your Forever Admirer - Happy 2026! 🎊</div>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="action-buttons">
+          <button class="btn" id="celebrateBtn">🎉 Celebrate New Year Together</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ========== DOM ELEMENTS ==========
+    const celebrateBtn = document.getElementById('celebrateBtn');
+    const effectsCanvas = document.getElementById('effectsCanvas');
+    const effectsCtx = effectsCanvas.getContext('2d');
+
+    let W = effectsCanvas.width = window.innerWidth;
+    let H = effectsCanvas.height = window.innerHeight;
+
+    window.addEventListener('resize', () => {
+      W = effectsCanvas.width = window.innerWidth;
+      H = effectsCanvas.height = window.innerHeight;
+    });
+
+    // ========== PARTICLE BURST EFFECT ==========
+    function particleBurst(x, y, emoji = '💜') {
+      const particles = [];
+      for (let i = 0; i < 10; i++) {
+        const angle = (i / 10) * Math.PI * 2;
+        particles.push({
+          x,
+          y,
+          vx: Math.cos(angle) * 5.5,
+          vy: Math.sin(angle) * 5.5,
+          life: 1,
+          emoji,
+          size: 20 + Math.random() * 10
+        });
+      }
+
+      let animationId;
+      const animateBurst = () => {
+        effectsCtx.clearRect(0, 0, W, H);
+        let hasActive = false;
+
+        for (let p of particles) {
+          if (p.life > 0) {
+            hasActive = true;
+            p.x += p.vx;
+            p.y += p.vy;
+            p.vy += 0.15;
+            p.life -= 0.018;
+
+            effectsCtx.globalAlpha = p.life * 0.85;
+            effectsCtx.font = p.size + 'px Arial';
+            effectsCtx.fillText(p.emoji, p.x, p.y);
+          }
+        }
+        effectsCtx.globalAlpha = 1;
+
+        if (hasActive) {
+          animationId = requestAnimationFrame(animateBurst);
+        } else {
+          effectsCtx.clearRect(0, 0, W, H);
+        }
+      };
+      animateBurst();
+    }
+
+    // ========== CELEBRATION CONFETTI ==========
+    function celebrationConfetti() {
+      const particles = [];
+      const emojis = ['💜', '💕', '✨', '💖', '🌹', '💝', '💗', '🎀'];
+      
+      for (let i = 0; i < 70; i++) {
+        particles.push({
+          x: Math.random() * W,
+          y: Math.random() * H - H,
+          vx: (Math.random() - 0.5) * 8.5,
+          vy: Math.random() * 6.5 + 3.5,
+          emoji: emojis[Math.floor(Math.random() * emojis.length)],
+          size: Math.random() * 28 + 20,
+          rotation: Math.random() * 360,
+          rotationSpeed: (Math.random() - 0.5) * 11
+        });
+      }
+
+      let frame = 0;
+      let animationId;
+      const animate = () => {
+        effectsCtx.clearRect(0, 0, W, H);
+        
+        for (let p of particles) {
+          p.y += p.vy;
+          p.vy += 0.18;
+          p.x += p.vx;
+          p.rotation += p.rotationSpeed;
+
+          effectsCtx.save();
+          effectsCtx.globalAlpha = Math.max(0, 1 - frame / 160);
+          effectsCtx.translate(p.x, p.y);
+          effectsCtx.rotate((p.rotation * Math.PI) / 180);
+          effectsCtx.font = p.size + 'px Arial';
+          effectsCtx.fillText(p.emoji, 0, 0);
+          effectsCtx.restore();
+        }
+
+        frame++;
+        if (frame < 160) {
+          animationId = requestAnimationFrame(animate);
+        } else {
+          effectsCtx.clearRect(0, 0, W, H);
+        }
+      };
+      animate();
+    }
+
+    // ========== MOUSE SPARKLE EFFECT ==========
+    document.addEventListener('mousemove', (e) => {
+      if (Math.random() < 0.12) {
+        particleBurst(e.clientX, e.clientY, '✨');
+      }
+    });
+
+    // ========== CELEBRATE BUTTON ==========
+    celebrateBtn.addEventListener('click', () => {
+      celebrationConfetti();
+      for (let i = 0; i < 3; i++) {
+        setTimeout(() => {
+          particleBurst(Math.random() * W, Math.random() * H, ['💜', '💕', '✨'][i % 3]);
+        }, i * 450);
+      }
+    });
+
+    // Auto-burst on load
+    setTimeout(() => {
+      particleBurst(W / 2, H / 2, '💜');
+    }, 1800);
+  </script>
+</body>
+</html>
